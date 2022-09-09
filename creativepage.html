@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Creative Corner</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="creativepage.css">
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+        <style>
+            #the-canvas { border: 1px dashed gray }   
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="left-side">
+                    <div class="nav-button-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-button-wrapper">
+                        <div class="dropdown-wrapper">
+                            <a>Gallery</a>
+                            <div class="dropdown-button">
+                                <a href="illustrations.html">Illustrations</a>
+                                <a href="fanart.html">Fanart</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-button-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-button-wrapper">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    <div class="nav-button-wrapper">
+                        <a href="creativepage.html">Creative corner</a>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div id="brand">
+                        <div class="brand-letter">A</div>
+                        <div class="brand-letter">n</div>
+                        <div class="brand-letter">d</div>
+                        <div class="brand-letter">r</div>
+                        <div class="brand-letter">e</div>
+                        <div class="brand-letter">e</div>
+                        <div class="brand-letter">a</div>
+                        <div class="brand-letter">&nbsp</div>
+                        <div class="brand-letter">A</div>
+                        <div class="brand-letter">r</div>
+                        <div class="brand-letter">t</div>
+                        <div class="brand-letter">&nbsp</div>
+                        <div class="brand-letter">S</div>
+                        <div class="brand-letter">t</div>
+                        <div class="brand-letter">u</div>
+                        <div class="brand-letter">d</div>
+                        <div class="brand-letter">i</div>
+                        <div class="brand-letter">o</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <form>
+                    <label for="day">Day:</label><br>
+                    <input type="text" id="day" name="day" value="10"><br>
+                    <label for="month">Month:</label><br>
+                    <input type="text" id="month" name="month" value="10"><br>
+                    <label for="year">Year:</label><br>
+                    <input type="text" id="year" name="year" value="1999"><br><br>
+                    <input type="button" value="Submit" onclick="ShowAge()" id="submit-button">
+                </form>
+            </div>
+            <p id="age"></p>
+
+            <div id ="animation-container">
+                <div id ="square3"></div>
+                <div id ="square2"></div>
+                <div id ="square1"></div>
+            </div>
+
+            <div id="context-menu">
+                <div class="context-menu-wrapper">
+                    <p onclick="ChangeContainerColor()" class="context-menu-button">Change animation container color</p>
+                </div>
+                <div class="context-menu-wrapper">
+                    <p onclick="ChangeBackgroundColor()" class="context-menu-button">Change background color</p>
+                </div>
+                <div class="context-menu-wrapper" class="context-menu-button">
+                    <p onclick="GoUp()">Go up</p>
+                </div>
+            </div>
+
+            <div class="text">
+                <div><p>I hope you enjoyed this page!</p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <script src="creativepage.js"></script>
+</html>
